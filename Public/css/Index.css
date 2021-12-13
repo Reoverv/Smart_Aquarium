@@ -1,0 +1,781 @@
+:root {
+    --web-view-ids: Index, Ph_Waarde, Hamburger, Temperatuur;
+    --web-view-name: Index;
+    --web-view-id: Index;
+    --web-scale-to-fit: false;
+    --web-scale-to-fit-type: width;
+    --web-enable-scale-up: false;
+    --web-scale-on-resize: true;
+    --web-show-scale-controls: false;
+    --web-scale-on-double-click: false;
+    --web-center-horizontally: true;
+    --web-center-vertically: false;
+    --web-actual-size-on-double-click: false;
+    --web-navigate-on-keypress: false;
+    --web-refresh-for-changes: true;
+    --web-add-image-compare: false;
+    --web-show-by-media-query: false;
+    --web-application: true;
+    --web-show-navigation-controls: false;
+    --web-enable-deep-linking: true;
+    --web-is-overlay: false;
+}
+
+#Index,
+#Ph_Waarde,
+#Hamburger,
+#Temperatuur {
+    display: none;
+}
+
+@media (min-width: 0px) {
+    .mediaViewInfo {
+        --web-view-name: Index;
+        --web-view-id: Index;
+        --web-scale-to-fit: false;
+        --web-scale-to-fit-type: width;
+        --web-enable-scale-up: false;
+        --web-scale-on-resize: true;
+        --web-application: true;
+        --web-enable-deep-linking: true;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+    }
+    #Index {
+        position: absolute;
+        display: block;
+        width: 393px;
+        height: 851px;
+        background-color: rgba(23, 23, 26, 1);
+        overflow: hidden;
+        --web-view-name: Index;
+        --web-view-id: Index;
+        --web-scale-to-fit: true;
+        --web-scale-to-fit-type: width;
+        --web-enable-scale-up: true;
+        --web-scale-on-resize: true;
+        --web-application: true;
+        --web-enable-deep-linking: true;
+    }
+    @keyframes {}
+    @keyframes {}
+    @keyframes slide-right {
+        0% {
+            transform: translateX(-100%);
+        }
+    }
+    #PhGroep {
+        position: absolute;
+        width: 328px;
+        height: 114px;
+        left: 33px;
+        top: 205px;
+        overflow: visible;
+        --web-animation: fadein 0.3s ease-in-out;
+        --web-action-type: view;
+        --web-action-target: Ph_Waarde;
+        cursor: pointer;
+    }
+    #PhWaardeBG {
+        fill: rgba(34, 34, 40, 1);
+    }
+    .PhWaardeBG {
+        filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.29));
+        position: absolute;
+        overflow: visible;
+        width: 346px;
+        height: 132px;
+        left: 0px;
+        top: 0px;
+    }
+    #PHwaarde {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+        position: absolute;
+        width: 77px;
+        height: 83px;
+        left: 5px;
+        top: 16px;
+        overflow: visible;
+    }
+    #pH_waarde_ {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+        left: 75px;
+        top: 42px;
+        position: absolute;
+        overflow: visible;
+        width: 142px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        color: rgba(255, 255, 255, 1);
+    }
+    #Path_1 {
+        fill: rgba(63, 180, 70, 1);
+    }
+    .Path_1 {
+        filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.161));
+        overflow: visible;
+        position: absolute;
+        width: 80px;
+        height: 85px;
+        left: 251px;
+        top: 24px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+    #pHwaarde_cijfer {
+        filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.161));
+        left: 268px;
+        top: 24px;
+        position: absolute;
+        overflow: visible;
+        width: 30px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        color: rgba(255, 255, 255, 1);
+    }
+    #TemeperatuurGroep {
+        position: absolute;
+        width: 328px;
+        height: 114px;
+        left: 33px;
+        top: 369px;
+        overflow: visible;
+        --web-animation: fadein 0.3s ease-out;
+        --web-action-type: view;
+        --web-action-target: Temperatuur;
+        cursor: pointer;
+    }
+    #TempBG {
+        fill: rgba(34, 34, 40, 1);
+    }
+    .TempBG {
+        filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.29));
+        position: absolute;
+        overflow: visible;
+        width: 346px;
+        height: 132px;
+        left: 0px;
+        top: 0px;
+    }
+    #Temp {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+        position: absolute;
+        width: 66px;
+        height: 71px;
+        left: 7px;
+        top: 21px;
+        overflow: visible;
+    }
+    #Temperatuur_s {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+        left: 73px;
+        top: 47px;
+        position: absolute;
+        overflow: visible;
+        width: 160px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        color: rgba(255, 255, 255, 1);
+    }
+    #Graden {
+        filter: drop-shadow(1px 2px 1px rgba(0, 0, 0, 0.651));
+        left: 292px;
+        top: 40px;
+        position: absolute;
+        overflow: visible;
+        width: 27px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        color: rgba(255, 255, 255, 1);
+    }
+    #Nu {
+        left: 257px;
+        top: 45px;
+        position: absolute;
+        overflow: visible;
+        width: 36px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        color: rgba(249, 249, 249, 1);
+    }
+    #VerlichtingGroep {
+        position: absolute;
+        width: 353px;
+        height: 138px;
+        left: 8px;
+        top: 521px;
+        overflow: visible;
+    }
+    #LichtBG {
+        fill: rgba(34, 34, 40, 1);
+    }
+    .LichtBG {
+        filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.29));
+        position: absolute;
+        overflow: visible;
+        width: 334px;
+        height: 120px;
+        left: 25px;
+        top: 12px;
+    }
+    #VerlichtingTekst {
+        filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.161));
+        left: 125px;
+        top: 53px;
+        position: absolute;
+        overflow: visible;
+        width: 128px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        color: rgba(255, 255, 255, 1);
+    }
+    #Light {
+        filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.161));
+        position: absolute;
+        width: 138px;
+        height: 138px;
+        left: 0px;
+        top: 0px;
+        overflow: visible;
+    }
+    #ON {
+        position: absolute;
+        width: 62px;
+        height: 67px;
+        left: 275px;
+        top: 36px;
+        overflow: visible;
+    }
+    #On {
+        fill: rgba(63, 180, 70, 1);
+    }
+    .On {
+        filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.161));
+        overflow: visible;
+        position: absolute;
+        width: 68px;
+        height: 73px;
+        left: 0px;
+        top: 0px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+    #ONTekst {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+        left: 7px;
+        top: 13px;
+        position: absolute;
+        overflow: visible;
+        width: 47px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        color: rgba(255, 255, 255, 1);
+    }
+    #VoedingGroep {
+        mix-blend-mode: normal;
+        position: absolute;
+        width: 328px;
+        height: 114px;
+        left: 33px;
+        top: 697px;
+        overflow: visible;
+    }
+    #VoedingBG {
+        fill: rgba(34, 34, 40, 1);
+    }
+    .VoedingBG {
+        filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, 0.29));
+        overflow: visible;
+        position: absolute;
+        width: 334px;
+        height: 120px;
+        left: 0px;
+        top: 0px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+    #Laatste_Voeding {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+        left: 71px;
+        top: 11px;
+        position: absolute;
+        overflow: visible;
+        width: 194px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        color: rgba(255, 255, 255, 1);
+    }
+    #Tijd {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+        left: 188px;
+        top: 57px;
+        position: absolute;
+        overflow: visible;
+        width: 77px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        color: rgba(255, 255, 255, 1);
+    }
+    #VoedingPlaatje {
+        filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.161));
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        left: 5px;
+        top: 17px;
+        overflow: visible;
+    }
+    #IndexTop {
+        fill: rgba(34, 34, 40, 1);
+    }
+    .IndexTop {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.631));
+        position: absolute;
+        overflow: visible;
+        width: 411px;
+        height: 96px;
+        left: 0px;
+        top: 0px;
+    }
+    #Hamburger_ {
+        position: absolute;
+        width: 62px;
+        height: 48px;
+        left: 13px;
+        top: 18px;
+        overflow: visible;
+        cursor: pointer;
+        --web-animation: slide-right 0.3s ease-in forwards;
+        --web-action-type: view;
+        --web-action-target: Hamburger;
+    }
+    #Repeat_Grid_1 {
+        position: absolute;
+        width: 62px;
+        height: 48px;
+        left: 0px;
+        top: 0px;
+        overflow: hidden;
+    }
+    #Group {
+        position: absolute;
+        width: 44px;
+        height: 30px;
+        left: 6px;
+        top: 6px;
+        overflow: visible;
+    }
+    #Rectangle_3 {
+        fill: rgba(255, 255, 255, 1);
+        stroke: rgba(112, 112, 112, 1);
+        stroke-width: 1px;
+        stroke-linejoin: round;
+        stroke-linecap: square;
+        stroke-miterlimit: 4;
+        shape-rendering: auto;
+    }
+    .Rectangle_3 {
+        filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.161));
+        position: absolute;
+        overflow: visible;
+        width: 62px;
+        height: 24px;
+        left: 0px;
+        top: 0px;
+    }
+    #Rectangle_3_bc {
+        fill: rgba(255, 255, 255, 1);
+        stroke: rgba(112, 112, 112, 1);
+        stroke-width: 1px;
+        stroke-linejoin: round;
+        stroke-linecap: square;
+        stroke-miterlimit: 4;
+        shape-rendering: auto;
+    }
+    .Rectangle_3_bc {
+        filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.161));
+        position: absolute;
+        overflow: visible;
+        width: 62px;
+        height: 24px;
+        left: 0px;
+        top: 12px;
+    }
+    #Rectangle_3_bd {
+        fill: rgba(255, 255, 255, 1);
+        stroke: rgba(112, 112, 112, 1);
+        stroke-width: 1px;
+        stroke-linejoin: round;
+        stroke-linecap: square;
+        stroke-miterlimit: 4;
+        shape-rendering: auto;
+    }
+    .Rectangle_3_bd {
+        filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.161));
+        position: absolute;
+        overflow: visible;
+        width: 62px;
+        height: 24px;
+        left: 0px;
+        top: 24px;
+    }
+    #Logo {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 1));
+        position: absolute;
+        width: 117px;
+        height: 117px;
+        left: 286px;
+        top: -19px;
+        overflow: visible;
+    }
+    #IndexSA {
+        left: 102px;
+        top: 23px;
+        position: absolute;
+        overflow: visible;
+        width: 195px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        color: rgba(255, 246, 113, 1);
+    }
+}
+
+@media (min-width: 0px) {
+    .mediaViewInfo {
+        --web-view-name: Ph Waarde;
+        --web-view-id: Ph_Waarde;
+        --web-scale-to-fit: true;
+        --web-scale-to-fit-type: width;
+        --web-enable-scale-up: true;
+        --web-scale-on-resize: true;
+        --web-center-horizontally: true;
+        --web-application: true;
+        --web-enable-deep-linking: true;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+    }
+    #Ph_Waarde {
+        position: absolute;
+        display: table;
+        width: 393px;
+        height: 851px;
+        background-color: rgba(23, 23, 26, 1);
+        overflow: hidden;
+        --web-view-name: Ph Waarde;
+        --web-view-id: Ph_Waarde;
+        --web-scale-to-fit: true;
+        --web-scale-to-fit-type: width;
+        --web-enable-scale-up: true;
+        --web-scale-on-resize: true;
+        --web-center-horizontally: true;
+        --web-application: true;
+        --web-enable-deep-linking: true;
+    }
+    @keyframes {}
+    #PhGraph {
+        fill: rgba(34, 34, 40, 1);
+    }
+    .PhGraph {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.29));
+        position: absolute;
+        overflow: visible;
+        width: 346px;
+        height: 406px;
+        left: 34px;
+        top: 142px;
+    }
+    #PhTop {
+        fill: rgba(34, 34, 40, 1);
+    }
+    .PhTop {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.631));
+        position: absolute;
+        overflow: visible;
+        width: 411px;
+        height: 96px;
+        left: 0px;
+        top: 0px;
+    }
+    #Logo_bk {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 1));
+        position: absolute;
+        width: 117px;
+        height: 117px;
+        left: 286px;
+        top: -19px;
+        overflow: visible;
+    }
+    #PhSA {
+        left: 102px;
+        top: 23px;
+        position: absolute;
+        overflow: visible;
+        width: 195px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        color: rgba(255, 246, 113, 1);
+    }
+    #Tips {
+        left: 164px;
+        top: 562px;
+        position: absolute;
+        overflow: visible;
+        width: 67px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        color: rgba(255, 255, 255, 1);
+    }
+    #TerugKnop {
+        fill: transparent;
+        stroke: rgba(255, 255, 255, 1);
+        stroke-width: 5px;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+        stroke-miterlimit: 4;
+        shape-rendering: auto;
+    }
+    .TerugKnop {
+        filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.161));
+        overflow: visible;
+        position: absolute;
+        width: 34px;
+        height: 35px;
+        transform: matrix(1, 0, 0, 1, 21, 22.5) rotate(-90deg);
+        transform-origin: center;
+        left: 0px;
+        top: 0px;
+        --web-animation: fadein 0.3s ease-out;
+        --web-action-type: view;
+        --web-action-target: Index;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 0px) {
+    .mediaViewInfo {
+        --web-view-name: Hamburger;
+        --web-view-id: Hamburger;
+        --web-scale-to-fit: true;
+        --web-scale-to-fit-type: width;
+        --web-enable-scale-up: true;
+        --web-scale-on-resize: true;
+        --web-application: true;
+        --web-enable-deep-linking: true;
+        --web-is-overlay: true;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+    }
+    @keyframes {}
+    #Hamburger {
+        position: absolute;
+        display: block;
+        width: 393px;
+        height: 851px;
+        overflow: hidden;
+        --web-animation: fadein 0.3s ease-out;
+        --web-action-type: view;
+        --web-action-target: Index;
+        cursor: pointer;
+        --web-view-name: Hamburger;
+        --web-view-id: Hamburger;
+        --web-scale-to-fit: true;
+        --web-scale-to-fit-type: width;
+        --web-enable-scale-up: true;
+        --web-scale-on-resize: true;
+        --web-application: true;
+        --web-enable-deep-linking: true;
+        --web-is-overlay: true;
+    }
+    #HamburgerSlide {
+        fill: rgba(42, 42, 51, 1);
+    }
+    .HamburgerSlide {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 1));
+        position: absolute;
+        overflow: visible;
+        width: 249px;
+        height: 869px;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@media (min-width: 0px) {
+    .mediaViewInfo {
+        --web-view-name: Temperatuur;
+        --web-view-id: Temperatuur;
+        --web-scale-to-fit: true;
+        --web-scale-to-fit-type: width;
+        --web-enable-scale-up: true;
+        --web-scale-on-resize: true;
+        --web-center-horizontally: true;
+        --web-application: true;
+        --web-enable-deep-linking: true;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+    }
+    #Temperatuur {
+        position: absolute;
+        display: table;
+        width: 393px;
+        height: 851px;
+        background-color: rgba(23, 23, 26, 1);
+        overflow: hidden;
+        --web-view-name: Temperatuur;
+        --web-view-id: Temperatuur;
+        --web-scale-to-fit: true;
+        --web-scale-to-fit-type: width;
+        --web-enable-scale-up: true;
+        --web-scale-on-resize: true;
+        --web-center-horizontally: true;
+        --web-application: true;
+        --web-enable-deep-linking: true;
+    }
+    @keyframes {}
+    #TempGraph {
+        fill: rgba(34, 34, 40, 1);
+    }
+    .TempGraph {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.29));
+        position: absolute;
+        overflow: visible;
+        width: 346px;
+        height: 406px;
+        left: 34px;
+        top: 142px;
+    }
+    #TempTop {
+        fill: rgba(34, 34, 40, 1);
+    }
+    .TempTop {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.631));
+        position: absolute;
+        overflow: visible;
+        width: 411px;
+        height: 96px;
+        left: 0px;
+        top: 0px;
+    }
+    #Logo_bv {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 1));
+        position: absolute;
+        width: 117px;
+        height: 117px;
+        left: 286px;
+        top: -19px;
+        overflow: visible;
+    }
+    #PHSA {
+        left: 102px;
+        top: 23px;
+        position: absolute;
+        overflow: visible;
+        width: 195px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 25px;
+        color: rgba(255, 246, 113, 1);
+    }
+    #Tips_bx {
+        left: 164px;
+        top: 562px;
+        position: absolute;
+        overflow: visible;
+        width: 67px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Segoe UI;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        color: rgba(255, 255, 255, 1);
+    }
+    #TerugKnop_by {
+        fill: transparent;
+        stroke: rgba(255, 255, 255, 1);
+        stroke-width: 5px;
+        stroke-linejoin: round;
+        stroke-linecap: round;
+        stroke-miterlimit: 4;
+        shape-rendering: auto;
+    }
+    .TerugKnop_by {
+        filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.161));
+        overflow: visible;
+        position: absolute;
+        width: 34px;
+        height: 35px;
+        transform: matrix(1, 0, 0, 1, 21, 22.5) rotate(-90deg);
+        transform-origin: center;
+        left: 0px;
+        top: 0px;
+        --web-animation: fadein 0.3s ease-out;
+        --web-action-type: view;
+        --web-action-target: Index;
+        cursor: pointer;
+    }
+}

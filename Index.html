@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Index</title>
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="public/css/Index.css" />
+    <script id="applicationScript" type="text/javascript" src="public/js/Index.js"></script>
+</head>
+
+<body>
+    <div id="Index">
+        <div onclick="application.goToTargetView(event)" id="PhGroep" class="PhGroep">
+            <svg class="PhWaardeBG">
+			<rect id="PhWaardeBG" rx="32" ry="32" x="0" y="0" width="328" height="114">
+			</rect>
+		</svg>
+            <img id="PHwaarde" src="PHwaarde.png" srcset="PHwaarde.png 1x">
+
+            <div id="pH_waarde_">
+                <span>pH waarde: </span>
+            </div>
+            <svg class="Path_1" viewBox="0 0 62 67">
+			<path id="Path_1" d="M 18 0 L 44 0 C 53.94112396240234 0 62 8.058874130249023 62 18 L 62 49 C 62 58.94112396240234 53.94112396240234 67 44 67 L 18 67 C 8.058874130249023 67 0 58.94112396240234 0 49 L 0 18 C 0 8.058874130249023 8.058874130249023 0 18 0 Z">
+			</path>
+		</svg>
+            <div id="pHwaarde_cijfer">
+                <span>6</span>
+            </div>
+        </div>
+        <div onclick="application.goToTargetView(event)" id="TemeperatuurGroep">
+            <svg class="TempBG">
+			<rect id="TempBG" rx="32" ry="32" x="0" y="0" width="328" height="114">
+			</rect>
+		</svg>
+            <img id="Temp" src="Temp.png" srcset="Temp.png 1x">
+
+            <div id="Temperatuur_s">
+                <span>Temperatuur:</span>
+            </div>
+            <div id="Graden">
+                <span>°c</span>
+            </div>
+            <div id="Nu">
+                <span>Nu</span>
+            </div>
+        </div>
+        <div id="VerlichtingGroep">
+            <svg class="LichtBG">
+			<rect id="LichtBG" rx="32" ry="32" x="0" y="0" width="328" height="114">
+			</rect>
+		</svg>
+            <div id="VerlichtingTekst">
+                <span>Verlichting</span>
+            </div>
+            <img id="Light" src="Light.png" srcset="Light.png 1x">
+
+            <div id="ON" class="ON">
+                <svg class="On" viewBox="0 0 62 67">
+				<path id="On" d="M 18 0 L 44 0 C 53.94112396240234 0 62 8.058874130249023 62 18 L 62 49 C 62 58.94112396240234 53.94112396240234 67 44 67 L 18 67 C 8.058874130249023 67 0 58.94112396240234 0 49 L 0 18 C 0 8.058874130249023 8.058874130249023 0 18 0 Z">
+				</path>
+			</svg>
+                <div id="ONTekst">
+                    <span>ON</span>
+                </div>
+            </div>
+        </div>
+        <div id="VoedingGroep">
+            <svg class="VoedingBG" viewBox="0 0 328 114">
+			<path id="VoedingBG" d="M 32 0 L 296 0 C 313.6731262207031 0 328 14.3268871307373 328 32 L 328 82 C 328 99.67311096191406 313.6731262207031 114 296 114 L 32 114 C 14.3268871307373 114 0 99.67311096191406 0 82 L 0 32 C 0 14.3268871307373 14.3268871307373 0 32 0 Z">
+			</path>
+		</svg>
+            <div id="Laatste_Voeding">
+                <span>Laatste voeding:</span>
+            </div>
+            <div id="Tijd">
+                <span>14 uur</span>
+            </div>
+            <img id="VoedingPlaatje" src="VoedingPlaatje.png" srcset="VoedingPlaatje.png 1x">
+
+        </div>
+        <svg class="IndexTop">
+		<rect id="IndexTop" rx="0" ry="0" x="0" y="0" width="393" height="78">
+		</rect>
+	</svg>
+        <div onclick="application.showOverlay(event,'Hamburger',0,0)" id="Hamburger_" class="Hamburger">
+            <div id="Repeat_Grid_1">
+                <div id="Group" class="">
+                    <svg class="Rectangle_3">
+					<rect id="Rectangle_3" rx="3" ry="3" x="0" y="0" width="44" height="6">
+					</rect>
+				</svg>
+                    <svg class="Rectangle_3_bc">
+					<rect id="Rectangle_3_bc" rx="3" ry="3" x="0" y="0" width="44" height="6">
+					</rect>
+				</svg>
+                    <svg class="Rectangle_3_bd">
+					<rect id="Rectangle_3_bd" rx="3" ry="3" x="0" y="0" width="44" height="6">
+					</rect>
+				</svg>
+                </div>
+            </div>
+        </div>
+        <img id="Logo" src="Logo.png" srcset="Logo.png 1x">
+
+        <div id="IndexSA">
+            <span>S</span><span style="color:rgba(255,255,255,1);">mart </span><span>A</span><span style="color:rgba(255,255,255,1);">quarium</span>
+        </div>
+    </div>
+    <div id="Ph_Waarde">
+        <svg class="PhGraph">
+		<rect id="PhGraph" rx="32" ry="32" x="0" y="0" width="328" height="388">
+		</rect>
+	</svg>
+        <svg class="PhTop">
+		<rect id="PhTop" rx="0" ry="0" x="0" y="0" width="393" height="78">
+		</rect>
+	</svg>
+        <img id="Logo_bk" src="Logo_bk.png" srcset="Logo_bk.png 1x">
+
+        <div id="PhSA">
+            <span>S</span><span style="color:rgba(255,255,255,1);">mart </span><span>A</span><span style="color:rgba(255,255,255,1);">quarium</span>
+        </div>
+        <div id="Tips">
+            <span>Tips:</span>
+        </div>
+        <svg class="TerugKnop" viewBox="0 0 34 35">
+		<path onclick="application.goToTargetView(event)" id="TerugKnop" d="M 13.40196514129639 7.407714366912842 C 14.86065196990967 4.404534816741943 19.13934326171875 4.404534816741943 20.59803009033203 7.407714366912842 L 31.20829963684082 29.25238418579102 C 32.49868392944336 31.90905570983887 30.56373977661133 35 27.61026763916016 35 L 6.389731884002686 35 C 3.436260461807251 35 1.501315593719482 31.90905570983887 2.791698932647705 29.25238418579102 Z">
+		</path>
+	</svg>
+    </div>
+    <div id="Hamburger" onclick="application.goToTargetView(event)">
+        <svg class="HamburgerSlide">
+		<rect id="HamburgerSlide" rx="0" ry="0" x="0" y="0" width="231" height="851">
+		</rect>
+	</svg>
+    </div>
+    <div id="Temperatuur">
+        <svg class="TempGraph">
+		<rect id="TempGraph" rx="32" ry="32" x="0" y="0" width="328" height="388">
+		</rect>
+	</svg>
+        <svg class="TempTop">
+		<rect id="TempTop" rx="0" ry="0" x="0" y="0" width="393" height="78">
+		</rect>
+	</svg>
+        <img id="Logo_bv" src="Logo_bv.png" srcset="Logo_bv.png 1x">
+
+        <div id="PHSA">
+            <span>S</span><span style="color:rgba(255,255,255,1);">mart </span><span>A</span><span style="color:rgba(255,255,255,1);">quarium</span>
+        </div>
+        <div id="Tips_bx">
+            <span>Tips:</span>
+        </div>
+        <svg class="TerugKnop_by" viewBox="0 0 34 35">
+		<path onclick="application.goToTargetView(event)" id="TerugKnop_by" d="M 13.40196514129639 7.407714366912842 C 14.86065196990967 4.404534816741943 19.13934326171875 4.404534816741943 20.59803009033203 7.407714366912842 L 31.20829963684082 29.25238418579102 C 32.49868392944336 31.90905570983887 30.56373977661133 35 27.61026763916016 35 L 6.389731884002686 35 C 3.436260461807251 35 1.501315593719482 31.90905570983887 2.791698932647705 29.25238418579102 Z">
+		</path>
+	</svg>
+    </div>
+
+</body>
+
+</html>
