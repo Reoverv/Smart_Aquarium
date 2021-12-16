@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="public/css/Index.css" />
-    <script id="applicationScript" type="text/javascript" src="public/js/Index.js"></script>
+    <link rel="stylesheet" type="text/css" id="applicationStylesheet" href="css/Index.css" />
+    <script id="applicationScript" type="text/javascript" src="js/Index.js"></script>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
 			<rect id="PhWaardeBG" rx="32" ry="32" x="0" y="0" width="328" height="114">
 			</rect>
 		</svg>
-            <img id="PHwaarde" src="PHwaarde.png" srcset="PHwaarde.png 1x">
+            <img id="PHwaarde" src="images/PHwaarde.png" srcset="images/PHwaarde.png 1x">
 
             <div id="pH_waarde_">
                 <span>pH waarde: </span>
@@ -27,7 +27,18 @@
 			</path>
 		</svg>
             <div id="pHwaarde_cijfer">
-                <span>6</span>
+                <div id="input">
+
+                    <script>
+                        var socket = io()
+
+                        socket.on('data', function(data) {
+                            console.log(data);
+
+                            document.getElementById('input').innerHTML = data;
+                        });
+                    </script>
+                </div>
             </div>
         </div>
         <div onclick="application.goToTargetView(event)" id="TemeperatuurGroep">
@@ -35,7 +46,7 @@
 			<rect id="TempBG" rx="32" ry="32" x="0" y="0" width="328" height="114">
 			</rect>
 		</svg>
-            <img id="Temp" src="Temp.png" srcset="Temp.png 1x">
+            <img id="Temp" src="images/Temp.png" srcset="images/Temp.png 1x">
 
             <div id="Temperatuur_s">
                 <span>Temperatuur:</span>
@@ -55,7 +66,7 @@
             <div id="VerlichtingTekst">
                 <span>Verlichting</span>
             </div>
-            <img id="Light" src="Light.png" srcset="Light.png 1x">
+            <img id="Light" src="images/Light.png" srcset="images/Light.png 1x">
 
             <div id="ON" class="ON">
                 <svg class="On" viewBox="0 0 62 67">
@@ -78,7 +89,7 @@
             <div id="Tijd">
                 <span>14 uur</span>
             </div>
-            <img id="VoedingPlaatje" src="VoedingPlaatje.png" srcset="VoedingPlaatje.png 1x">
+            <img id="VoedingPlaatje" src="images/VoedingPlaatje.png" srcset="images/VoedingPlaatje.png 1x">
 
         </div>
         <svg class="IndexTop">
@@ -103,7 +114,7 @@
                 </div>
             </div>
         </div>
-        <img id="Logo" src="Logo.png" srcset="Logo.png 1x">
+        <img id="Logo" src="images/Logo.png" srcset="images/Logo.png 1x">
 
         <div id="IndexSA">
             <span>S</span><span style="color:rgba(255,255,255,1);">mart </span><span>A</span><span style="color:rgba(255,255,255,1);">quarium</span>
@@ -118,7 +129,7 @@
 		<rect id="PhTop" rx="0" ry="0" x="0" y="0" width="393" height="78">
 		</rect>
 	</svg>
-        <img id="Logo_bk" src="Logo_bk.png" srcset="Logo_bk.png 1x">
+        <img id="Logo_bk" src="images/Logo_bk.png" srcset="images/Logo_bk.png 1x">
 
         <div id="PhSA">
             <span>S</span><span style="color:rgba(255,255,255,1);">mart </span><span>A</span><span style="color:rgba(255,255,255,1);">quarium</span>
@@ -146,7 +157,7 @@
 		<rect id="TempTop" rx="0" ry="0" x="0" y="0" width="393" height="78">
 		</rect>
 	</svg>
-        <img id="Logo_bv" src="Logo_bv.png" srcset="Logo_bv.png 1x">
+        <img id="Logo_bv" src="images/Logo_bv.png" srcset="images/Logo_bv.png 1x">
 
         <div id="PHSA">
             <span>S</span><span style="color:rgba(255,255,255,1);">mart </span><span>A</span><span style="color:rgba(255,255,255,1);">quarium</span>
